@@ -16,6 +16,33 @@ typedef NS_ENUM(NSUInteger, DeviceType) {
 
 @interface UIDevice (DeviceDistinction)
 
-- (DeviceType)deviceType;
+/**
+ Type of current device
+
+ @return device type
+ */
++ (DeviceType)deviceType;
+
+/**
+ Width Ratio based on TEST Device
+ 
+ baseDevice = iPhone6 | iPad air
+ 
+ ratio = currentDeviceScreenWidth / baseDeviceScreenWidth
+
+ @return Width Ratio
+ */
++ (CGFloat)deviceRatioWidth;
+
+/**
+ Height Ratio based on TEST Device
+
+ baseDevice = iPhone6 | iPad air
+
+ ratio = currentDeviceScreenHeight / baseDeviceScreenHeight
+
+ @return Width Ratio
+ */
++ (CGFloat)deviceRatioHeight;
 
 @end

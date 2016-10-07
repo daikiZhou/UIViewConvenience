@@ -8,11 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-static inline CGRect screenFrame() {
-    return [UIScreen mainScreen].bounds;
-}
-static inline CGSize screenSize() {
-    return screenFrame().size;
+static inline CGRect CGRectMakeFromOriginSize(CGPoint origin, CGSize size) {
+    return CGRectMake(origin.x, origin.y, size.width, size.height);
 }
 
 @interface UIView (Edge)

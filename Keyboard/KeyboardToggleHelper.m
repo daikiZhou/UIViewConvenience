@@ -31,8 +31,6 @@ static inline UIViewAnimationOptions animationCurveToOption(UIViewAnimationCurve
 }
 
 - (void)dealloc {
-    self.delegate = nil;
-
     [[NSNotificationCenter defaultCenter] removeObserver:self
                                                     name:UIKeyboardWillShowNotification
                                                   object:nil];

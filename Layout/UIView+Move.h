@@ -21,6 +21,12 @@ typedef NS_ENUM(NSUInteger, MoveDirection) {
 - (void)moveCenterTo:(CGPoint)point;
 - (void)moveBy:(CGFloat)distance direction:(MoveDirection)direction;
 - (void)moveBy:(CGFloat)distance angle:(CGFloat)angle;
+
+- (CGRect)rectMoveOriginTo:(CGPoint)point;
+- (CGRect)rectMoveCenterTo:(CGPoint)point;
+- (CGRect)rectMoveBy:(CGFloat)distance direction:(MoveDirection)direction;
+- (CGRect)rectMoveBy:(CGFloat)distance angle:(CGFloat)angle;
+
 - (void)moveOutOfSuperViewTo:(MoveDirection)direction;
 
 @end
